@@ -1,0 +1,70 @@
+.custom-form {
+    .form-group {
+        position: relative;
+        margin-bottom: 1.5rem;
+        .form-control {
+            border: none;
+            border-bottom: #7a7470 solid 1px;
+            background: transparent;
+            padding: 2rem 0;
+            @include prefix(border-radius, 0, moz webkit ms);
+            outline: none;
+            font-size: $small-font-size;
+            @include prefix(appearance, none, moz webkit ms);
+            &:focus {
+                @include prefix(box-shadow, none, moz webkit ms);
+            }
+
+            &.msg {
+                height: 3.4rem;
+                resize: none;
+            }
+        }
+        .form-control-placeholder {
+            font-size: $small-font-size;
+            position: absolute;
+            top: 0;
+            padding: 7px 0 0 0;
+            transition: all 200ms;
+            opacity: 0.5;
+        }
+    }
+}
+
+
+
+.form-control:focus + .form-control-placeholder,
+.form-control:valid + .form-control-placeholder {
+    font-size: 75%;
+    transform: translate3d(0, -100%, 0);
+    opacity: 1;
+}
+
+.form-control {
+    font-size: $small-font-size;
+    height: 4.2rem;
+    padding: 0.5rem 1.2rem;
+    background: transparent;
+    border-color: #dfdfdf;
+    @include prefix(border-radius, 0.5rem, moz webkit ms);
+    @include prefix(appearance, none, moz webkit ms);
+    &.elipse {
+		@include prefix(border-radius, 2.5rem, moz webkit ms);
+        padding-left: 2rem;
+        padding-right: 2rem;
+	}
+    
+}
+
+.custom-label {
+    color: $primary;
+    font-size: 1.3rem;
+    margin-bottom: 0.2rem;
+    display: block;
+    &.newthme {
+        font-weight: 700;
+        font-size: $small-font-size;
+    }
+}
+
+

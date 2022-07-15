@@ -1,0 +1,21 @@
+.main-header {
+    width: 100%;
+    z-index: 2;
+    position: relative;
+    background: $white;
+    @include prefix(box-shadow, 0 0.3rem 0.6rem rgba($color: $black, $alpha: 0.07), moz webkit ms);
+
+    &__top {
+        background-color: $secondary;
+        height: 4rem;
+        .container {
+            text-align: center;
+            color: $white;
+            font-size: $default-font-size;
+            line-height: 4rem;
+            @media (max-width:$mobile) {
+                font-size: 1rem;
+            }
+        }
+    }
+}

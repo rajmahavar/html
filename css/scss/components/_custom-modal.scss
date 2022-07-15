@@ -1,0 +1,57 @@
+.modal {
+    .modal-dialog {
+        &.modal-md {
+            max-width: 64rem;
+        }
+        &.modal-mds {
+            max-width: 37rem;
+        }
+        .modal-content {
+            background: $white;
+            border: none;
+            @include prefix(border-radius, 1rem, moz webkit ms);
+            &.sideGap {
+                padding: 3rem 5rem;
+            }
+            &.modal-white {
+                background: $white;
+            }
+            
+            .close {
+                $size: 3rem;
+                width: $size;
+                height: $size;
+                background: url('#{$base-image-path}/close-icon.svg') center center no-repeat;
+                position: absolute;
+                top: 1rem;
+                right: 1rem;
+                z-index: 1;
+            }
+
+            .modal-body {
+                padding: 3rem;
+                .logo-title {
+                    text-align: center;
+                    margin-bottom: 3rem;
+                    &__img {
+                        margin-bottom: 1.5rem;
+                    }
+
+                    &__name {
+                        font-family: $font-family-primary;
+                    }
+                }
+
+                .otpFields {
+                    margin-bottom: 3rem;
+                    .form-control {
+                        width: 6rem;
+                        height: 6rem;
+                        @include prefix(border-radius, 0.5rem, moz webkit ms);
+                        margin: 0 0.5rem;
+                    }
+                }
+            }
+        }
+    }
+}

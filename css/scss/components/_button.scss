@@ -1,0 +1,120 @@
+// Buttons
+.btn {
+	font-family: $font-family-primary;
+	font-weight: $weight-medium;
+	font-size: $medium-font-size;
+	padding: 1.4rem 2.5rem;
+	line-height: 1;
+	border: none;
+	@include prefix(border-radius, 0, moz webkit ms);
+	@include prefix(transition, 400ms, moz webkit ms);
+
+	// Rounded
+	&.elipse {
+		@include prefix(border-radius, 25px, moz webkit ms);
+	}
+	&.rounded-4 {
+		@include prefix(border-radius, 4px, moz webkit ms);
+	}
+	&.rounded-5 {
+		@include prefix(border-radius, 5px, moz webkit ms);
+	}
+
+	&.btn-w-25 {
+		min-width: 25rem;
+		position: relative;
+	}
+	
+
+	// Buttons Sizes
+	&.btn-xss {
+		font-size: 1.2rem;
+		padding: 0.4rem 1rem;
+	}
+	&.btn-xs {
+		font-size: 1.3rem;
+		padding: 0.8rem 1.5rem;
+	}
+	&.btn-sm {
+		font-size: 1.4rem;
+		padding: 1.2rem 2rem;
+	}
+
+	&.btn-md {
+		font-size: 1.8rem;
+		padding: 1.2rem 4rem;
+	}
+	
+	&.btn-lg {
+		font-size: 1.8rem;
+		padding: 1.5rem 4.5rem;
+	}
+	&.btn-long {
+		padding-left: 4.5rem;
+		padding-right: 4.5rem;
+	}
+
+	&.btn-full{
+		width: 100%;
+	}
+
+	&.btn-primary {
+		background-color: $primary !important;
+	}
+	&.btn-secondary {
+		background-color: $secondary;
+	}
+	&.btn-success {
+		background-color: $success;
+	}
+	&.btn-tertiary {
+		background-color: $tertiary;
+		color: $white;
+	}
+
+	&.btn-primary-ghost {
+		background-color: transparent;
+		border: $secondary solid 0.2rem;
+		color: $secondary;
+	}
+	
+	&.btn-secondary-ghost {
+		background-color: transparent;
+		border: $primary solid 0.2rem;
+		color: $primary;
+	}
+	
+	&.btn-white {
+		background-color: $white;
+	}
+	&.btn-gray {
+		background-color: #636363;
+		color: $white;
+	}
+}
+
+
+.iconx {
+	$size: 3rem;
+	width: $size;
+	height: $size;
+	@include flexContenCenterInline;
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

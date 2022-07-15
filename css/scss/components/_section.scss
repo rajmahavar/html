@@ -1,0 +1,6 @@
+.section {
+    padding: 3rem 0;
+    @media (max-width:$mobileBig) {
+		padding: 2rem 0;
+	}
+}

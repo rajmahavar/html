@@ -1,0 +1,112 @@
+.main-footer {
+    &__howTeamWork {
+        background-color: $secondary;
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 4rem;
+            padding-bottom: 4rem;
+            @media (max-width:$mobileBig) {
+                display: block;
+            }
+            &__left {
+                display: flex;
+                align-items: center;
+                position: relative;
+                padding-left: 3rem;
+                @media (max-width:$mobileBig) {
+                    display: block;
+                    padding-left: 0;
+                }
+                &::before {
+                    width: 1.5rem;
+                    height: 100%;
+                    position: absolute;
+                    content: '';
+                    left: 0;
+                    top: 0;
+                    background: $primary;
+                    @media (max-width:$mobileBig) {
+                        display: none;
+                    }
+                }
+                &__title {
+                    color: $white;
+                }
+                &__text {
+                    color: $white;
+                    margin-left: 2rem;
+                    @media (max-width:$mobileBig) {
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+    }
+    &__bot {
+        background: $black;
+        padding: 5rem 0 3rem 0;
+    }
+}
+
+
+
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    .social-item {
+        $size: 5rem;
+        width: $size;
+        height: $size;
+        background: rgba($color: $white, $alpha: 0.07);
+        margin-left: 1rem;
+        margin-right: 1rem;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        @include prefix(border-radius, 50%, moz webkit ms);
+        border: rgba($color: $white, $alpha: 0.07) solid 1px;
+    }
+}
+
+.footer-links {
+    margin-bottom: 1rem;
+    ul {
+        li {
+            display: inline-block;
+            position: relative;
+            &::before {
+                width: 1px;
+                height: 1.5rem;
+                @include contentOjc_lr0;
+                background: #7F7D7D;
+                left: auto;
+                right: -2px;
+                top: 5px;
+            }
+            a {
+                color: #7F7D7D;
+                padding: 0 1rem;
+                font-size: 1.5rem;
+                &:hover {
+                    color: $primary;
+                }
+            }
+            &:last-child {
+                &::before {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+.copyright-text {
+    color: #7F7D7D;
+    font-size: 1.5rem;
+}

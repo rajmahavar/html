@@ -1,0 +1,52 @@
+@import './abstracts/variables';
+@import './abstracts/mixin';
+@import './abstracts/functions'; 
+
+@import "base/animate";
+@import "base/animations";
+@import "base/base";
+@import "base/common";
+@import "base/fonts";
+@import "base/typography";
+@import "base/utilities";
+@import "base/helper";
+
+
+@import "./components/alert";
+@import "./components/breadcrumb";
+@import "./components/button";
+@import "./components/components";
+@import "./components/custom-modal"; 
+@import "./components/section";
+@import "./components/headings";
+@import "./components/menu";
+@import "./components/pagination";
+@import "./components/forms";
+@import "./components/spinner";
+@import "./components/tabs";
+@import "./components/scrollbar";
+
+
+
+
+@import "./layouts/footer";
+@import "./layouts/header";
+@import "./layouts/grid";
+@import "./layouts/sidebar";
+
+
+
+//Pages
+@import "./pages/home";
+@import "./pages/secondary";
+
+
+
+
+//semantic
+@import "./themes/semantic-custom";
+
+@import "./vendor/animate";
+@import "./vendor/select2";
+@import "./vendor/slick_theme";
+@import "./vendor/slick";
