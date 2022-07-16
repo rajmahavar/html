@@ -40,7 +40,7 @@
  							</ul>
 						</div>
 						<div class="main-header__main__signUpBtn">
-							<a href="#" class="btn btn-primary signupBtn">Sign up Now</a>
+							<a href="#" class="btn btn-primary signupBtn" data-bs-toggle="modal" data-bs-target="#signupModal">Sign up Now</a>
 							<button onclick="menuToggle()" class="menuBtn">
 								<span class="menuBtn__line one"></span>
 								<span class="menuBtn__line two"></span>
@@ -94,7 +94,7 @@
 				<section class="section">
 					<div class="container">
 						<div class="row gx-5 fx-aic">
-							<div class="col-md-6 block-content">
+							<div class="col-md-6 block-content mbm-15">
 								<h2>The only formation <br> creator with photos of <br> all players</h2>
 								<p class="size24">Download your squad and share it <br> with your friends</p>
 								<p>Easily create your own football team in our soccer tactics and formations tool. Use it to show what is your current favourite lineup or who you want to play on the next match.</p>
@@ -132,7 +132,7 @@
 					<div class="container">
 						<div class="container__left">
 							<h2 class="container__left__title mb-0">How Team Selector Works</h2>
-							<p class="container__left__text mb-0">Predictal Reimagine Team Selector. <br> A Football Survival Game.</p>
+							<p class="container__left__text mb-0 mbm-15">Predictal Reimagine Team Selector. <br> A Football Survival Game.</p>
 						</div>
 						<a href="#" class="btn btn-primary">Learn more</a>
 					</div>
@@ -169,6 +169,35 @@
 				</div>
 			</footer>
 			<!-- Footer Section end -->
+		</div>
+		<!-- wapper end -->
+
+		<!-- Sign Up Modal -->
+		<div class="modal fade" id="signupModal" tabindex="-1" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header border-0">
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body pt-2">
+						<h4 class="text-center mb-20">Sign Up</h4>
+						<form>
+							<div class="mb-3">
+								<input type="text" placeholder="Name" class="form-control">
+							</div>
+							<div class="mb-3">
+								<input type="email" placeholder="Email" class="form-control">
+							</div>
+							<div class="mb-3">
+								<input type="text" placeholder="Contact" class="form-control">
+							</div>
+							<div class="d-grid">
+								<button type="submit" class="btn btn-primary btn-block rounded-4">Submit</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
 		</div>
 
 			<script src="js/jquery.min.js"></script>
