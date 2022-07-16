@@ -8,6 +8,9 @@
         left: 0;
         top: 0;
         background-color: $secondary;
+        @media (max-width:$mobile) {
+            height: 82%;
+        }
     }
     &__text {
         position: relative;

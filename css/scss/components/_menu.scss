@@ -45,7 +45,7 @@
 
 
 .main-menu {
-    @media (max-width:$mobileBig) {
+    @media (max-width:$mobileMed) {
         width: 100%;
         position: fixed;
         left: -100%;
@@ -54,9 +54,10 @@
         height: 100%;
         z-index: 99;
         @include visibilityOpacityHide;
+        @include prefix(transition, 0.3s, moz webkit ms);
     }
     &.opened {
-        @media (max-width:$mobileBig) {
+        @media (max-width:$mobileMed) {
             left: 0;
             @include visibilityOpacityShow;
         }
@@ -65,7 +66,7 @@
     .main-menu-nav {
         li {
             display: inline-block;
-            @media (max-width:$mobileBig) {
+            @media (max-width:$mobileMed) {
                 display: block;
                 border-bottom: rgba($color: $white, $alpha: 0.3) solid 1px;
             }
@@ -79,6 +80,10 @@
                     font-size: $default-font-size;
                 }
                 @media (max-width:$mobileBig) {
+                    padding: 0.8rem 0.5rem;
+                    font-size: $small-font-size;
+                }
+                @media (max-width:$mobileMed) {
                     color: $primary;
                     padding: 1rem 2rem;
                     display: block;
@@ -92,6 +97,9 @@
                     border: $secondary solid 1px;
                     @include prefix(border-radius, 0.5rem, moz webkit ms);
                     color: $default-text-color;
+                    @media (max-width:$mobileMed) {
+                        color: $white;
+                    }
                 }
             }
         }
@@ -99,7 +107,7 @@
 
     &__mobileHead {
         display: none;
-        @media (max-width:$mobileBig) {
+        @media (max-width:$mobileMed) {
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -109,7 +117,7 @@
             padding-right: 1.5rem;
         }
         img {
-            @media (max-width:$mobileBig) {
+            @media (max-width:$mobileMed) {
                 max-height: 5rem;
             }
         }
@@ -123,7 +131,7 @@
     background: transparent;
     display: none;
     position: relative;
-    @media (max-width:$mobileBig) {
+    @media (max-width:$mobileMed) {
         display: inline-block;
         vertical-align: middle;
     }

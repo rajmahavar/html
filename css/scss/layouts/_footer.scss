@@ -37,8 +37,12 @@
                 &__text {
                     color: $white;
                     margin-left: 2rem;
+                    @media (max-width:$tablet) {
+                        font-size: $default-font-size;
+                    }
                     @media (max-width:$mobileBig) {
                         margin-left: 0;
+                        font-size: $medium-font-size;
                     }
                 }
             }
@@ -47,6 +51,11 @@
     &__bot {
         background: $black;
         padding: 5rem 0 3rem 0;
+        h2 {
+            @media (max-width:$mobile) {
+                font-size: $large-font-size;
+            }
+        }
     }
 }
 
@@ -71,6 +80,34 @@
         align-items: center;
         @include prefix(border-radius, 50%, moz webkit ms);
         border: rgba($color: $white, $alpha: 0.07) solid 1px;
+
+        &.facebook {
+            &:hover {
+                background: #4267B2;
+            }
+        }
+        &.twitter {
+            &:hover {
+                background: #1DA1F2;
+            }
+        }
+        &.youtube {
+            &:hover {
+                background: #FF0000;
+            }
+        }
+        &.instagram {
+            &:hover {
+                // background: #d6249f;
+                // background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+                background: #f09433; 
+                background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+                background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+                background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+                border: none;
+            }
+        }
     }
 }
 
@@ -109,4 +146,5 @@
 .copyright-text {
     color: #7F7D7D;
     font-size: 1.5rem;
+    margin-bottom: 0;
 }
